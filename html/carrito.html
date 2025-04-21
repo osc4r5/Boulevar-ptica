@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Boulevar | Carrito</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../img/logo.png" alt="logo de Optica Boulevar" width="250">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html" class="active">Carrito 🛒 (<span id="contador-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor-carrito">
+            <h2>Tu Carrito de Compras</h2>
+
+            <!-- Tabla de productos -->
+            <table id="tabla-carrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-carrito">
+                    <!-- Los productos se insertarán aquí dinámicamente con JavaScript -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="total-texto">Total:</td>
+                        <td colspan="2" class="total-numero" id="total-pagar">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Botones de acciones -->
+            <div class="acciones-carrito">
+                <button id="vaciar-carrito" class="btn btn-secundario">Vaciar Todo</button>
+                <button id="pagar" class="btn btn-primario">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Óptica Boulevar. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
